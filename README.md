@@ -1,12 +1,28 @@
 # FedFetch
 
-This repository contains the artifact for **FedFetch: Faster Federated Learning With Adaptive Downstream Prefetching** accepted at the *IEEE International Conference on Computer Communications* (**INFOCOM 2025**). 
+**FedFetch** is a general prefetching strategy for faster cross-device federated learning. FedFetch is described in the **FedFetch: Faster Federated Learning With Adaptive Downstream Prefetching** conference paper published at **INFOCOM 2025**.
 
-FedFetch is built as a component for the FedScale experimental platform. The main FedFetch source code is located in `examples/fedfetch`. FedFetch also makes several minor modifications to the `fedscale` directory, mainly for config parsing in `fedscale/cloud/config_parser.py`. 
+[Link to paper](https://www.cs.ubc.ca/~bestchai/papers/infocom25-fedfetch.pdf)
+
+BibTeX
+```
+@InProceedings{yan2025fedfetch,
+  title     = {FedFetch: Faster Federated Learning with Adaptive Downstream Prefetching},
+  author    = {Yan, Qifan and Liu, Andrew and He, Shiqi and Lécuyer, Mathias and Beschastnikh, Ivan},
+  year      = {2025},
+  booktitle = {IEEE INFOCOM 2025 - IEEE Conference on Computer Communications},
+}
+
+```
+
+
+## Respository Overview
+
+This repository contains the experiment code and datasets used in FedFetch, implemented as a component for the FedScale experimental platform. The main FedFetch source code is located in `examples/prefetch`. FedFetch also makes several minor modifications to the `fedscale` directory, mainly for config parsing in `fedscale/cloud/config_parser.py`. 
 
 ## Getting Started with FedFetch
 
-Please refer to the the standard [FedScale installation instructions](#quick-installation-linux) to install FedScale first. Note that we made several modifications to the install script `install.sh` and library dependencies compared to the main FedScale repo. Please note that we use the `fedfetch` conda environment (`fedfetch-environment.yml`) and not the standard `fedscale` conda environment (`environment*.yml`).
+Please refer to the the standard [FedScale installation instructions](#quick-installation-linux) to install FedScale first. We made several modifications to the install script `install.sh` and library dependencies compared to the main FedScale repo. Please note that we use the `fedfetch` conda environment (`fedfetch-environment.yml`) and not the standard `fedscale` conda environment (`environment*.yml`).
 
 After setting up FedScale, you can download the datasets used for our experiments with the following commands.
 
