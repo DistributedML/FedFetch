@@ -2,7 +2,7 @@
 
 **FedFetch** is a general prefetching strategy for faster cross-device federated learning. FedFetch is described in the **FedFetch: Faster Federated Learning With Adaptive Downstream Prefetching** conference paper published at **INFOCOM 2025**.
 
-[Link to paper](https://www.cs.ubc.ca/~bestchai/papers/infocom25-fedfetch.pdf)
+[Link to paper](https://arxiv.org/abs/2504.15366)
 
 BibTeX
 ```
